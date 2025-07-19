@@ -1,97 +1,108 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Автошкола СТАРТ</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
+      background: #f0f4f8;
       color: #333;
+    }
+    header {
+      background-color: #2b90d9;
+      color: white;
+      padding: 20px;
       text-align: center;
     }
-
-    header {
-      background-color: #d32f2f;
-      color: white;
-      padding: 20px 0;
+    header img {
+      height: 60px;
     }
-
-    h1 {
-      margin: 0;
+    main {
+      padding: 30px 20px;
+      text-align: center;
     }
-
-    .slogan {
-      font-size: 1.2em;
-      margin-top: 5px;
+    .buttons {
+      margin: 30px 0;
     }
-
-    .content {
-      padding: 30px;
-    }
-
-    .content img {
-      max-width: 90%;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-
-    .button {
+    .buttons a {
       display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
-      background-color: #1976d2;
+      margin: 10px;
+      padding: 15px 25px;
+      background: #2b90d9;
       color: white;
+      border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      border-radius: 6px;
+      transition: 0.3s;
     }
-
+    .buttons a:hover {
+      background: #1c6fa3;
+    }
     .reviews {
       margin-top: 40px;
-      background-color: #fff3e0;
-      padding: 20px;
-      border-top: 2px solid #ff9800;
+      text-align: left;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
     }
-
     .review {
+      background: #fff;
+      border-left: 5px solid #2b90d9;
+      padding: 15px 20px;
       margin-bottom: 15px;
-      font-style: italic;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
-
     footer {
-      background-color: #eeeeee;
+      background: #222;
+      color: white;
       padding: 15px;
-      font-size: 0.9em;
+      text-align: center;
+    }
+    h1, h2 {
+      color: #2b90d9;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Автошкола “СТАРТ”</h1>
-    <p class="slogan">Научим водить уверенно и с первого раза!</p>
+    <h1>Автошкола "СТАРТ"</h1>
+    <p>Надёжный путь к водительскому удостоверению!</p>
   </header>
 
-  <div class="content">
-    <img src="https://cdn.pixabay.com/photo/2015/01/19/13/51/car-604019_960_720.jpg" alt="Учебная машина">
-    <br>
-    <a href="https://t.me/+79145539975" class="button">Записаться на курсы (Telegram)</a>
-  </div>
+  <main>
+    <h2>Запишитесь прямо сейчас</h2>
+    <div class="buttons">
+      <a href="https://wa.me/79145539975" target="_blank">Написать в WhatsApp</a>
+      <a href="https://t.me/+79145539975" target="_blank">Связаться в Telegram</a>
+    </div>
 
-  <div class="reviews">
-    <h2>Отзывы наших учеников:</h2>
-    <div class="review">⭐️⭐️⭐️⭐️⭐️ “Прошёл с первого раза! Огромное спасибо инструктору Алексею Бурову — всё объясняет просто и понятно!”</div>
-    <div class="review">⭐️⭐️⭐️⭐️⭐️ “Очень удобное расписание и хорошие машины. Учился у Тамила Дашиева — отличный инструктор!”</div>
-    <div class="review">⭐️⭐️⭐️⭐️⭐️ “Не думала, что получится, но справилась! Спасибо всей команде школы!”</div>
-    <div class="review">⭐️⭐️⭐️⭐️⭐️ “Лучшая автошкола! Была у инструктора Романа Зайцева — спокойный, вежливый, терпеливый. Очень рекомендую.”</div>
-  </div>
+    <h2>Наши инструкторы:</h2>
+    <ul style="list-style:none; padding-left:0;">
+      <li>🚗 Алексей Смирнов — опыт 10 лет</li>
+      <li>🚙 Ольга Кузнецова — автоинструктор категории B</li>
+      <li>🚗 Михаил Иванов — специалист по подготовке к экзаменам</li>
+    </ul>
+
+    <h2>Наша команда</h2>
+    <p>📌 <strong>Тимур Расулов</strong> — координатор по работе с учениками и расписанием</p>
+
+    <div class="reviews">
+      <h2>Отзывы наших учеников:</h2>
+      <div class="review">⭐⭐⭐⭐⭐ «Отличная автошкола, сдал с первого раза!» — Артём</div>
+      <div class="review">⭐⭐⭐⭐⭐ «Хорошие машины и добрые инструктора!» — Валерия</div>
+      <div class="review">⭐⭐⭐⭐⭐ «Рекомендую всем друзьям» — Руслан</div>
+      <div class="review">⭐⭐⭐⭐⭐ «Учиться было легко и приятно» — Анастасия</div>
+    </div>
+  </main>
 
   <footer>
-    © 2025 Автошкола “СТАРТ” — Все права защищены.
+    © 2025 Автошкола "СТАРТ" — Все права защищены.
   </footer>
 
 </body>
