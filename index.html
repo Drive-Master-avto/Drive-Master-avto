@@ -5,105 +5,96 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Автошкола СТАРТ</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f0f4f8;
-      color: #333;
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f0f4f8; color:#333; }
+    header { position: relative; }
+    header img { width:100%; height:auto; }
+    header .overlay {
+      position:absolute; top:0; left:0; right:0; bottom:0;
+      background: rgba(0,0,0,0.4);
+      display:flex; justify-content:center; align-items:center;
+      color: white; flex-direction: column;
     }
-    header {
-      background-color: #2b90d9;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    header img {
-      height: 60px;
-    }
-    main {
-      padding: 30px 20px;
-      text-align: center;
-    }
-    .buttons {
-      margin: 30px 0;
-    }
+    header .overlay h1 { font-size: 36px; margin:0; }
+    header .overlay p { font-size: 18px; margin:10px 0 20px; }
+    .buttons { margin:20px 0; }
     .buttons a {
-      display: inline-block;
-      margin: 10px;
-      padding: 15px 25px;
-      background: #2b90d9;
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
+      display:inline-block; margin:5px; padding:12px 24px;
+      background:#25D366; color:white; text-decoration:none;
+      border-radius:6px; font-weight:bold;
     }
-    .buttons a:hover {
-      background: #1c6fa3;
+    .buttons a.telegram { background:#0088cc; }
+    .section { padding:40px 20px; max-width:980px; margin:auto; }
+    .categories, .instructors, .reviews { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; }
+    .category, .card { background:white; border-radius:10px;
+      padding:20px; width:260px; box-shadow:0 2px 8px rgba(0,0,0,0.1);
+      text-align:center;
     }
-    .reviews {
-      margin-top: 40px;
-      text-align: left;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
+    .category h3, .card h3 { margin-top:15px; }
+    .reviews .review { background:white; padding:15px; margin-bottom:15px;
+      border-left:4px solid #2b90d9; box-shadow:0 2px 6px rgba(0,0,0,0.05);
+      text-align:left;
     }
-    .review {
-      background: #fff;
-      border-left: 5px solid #2b90d9;
-      padding: 15px 20px;
-      margin-bottom: 15px;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-    footer {
-      background: #222;
-      color: white;
-      padding: 15px;
-      text-align: center;
-    }
-    h1, h2 {
-      color: #2b90d9;
-    }
+    footer { background:#222; color:#fff; text-align:center; padding:20px; }
+    footer a { color:#4aaef5; text-decoration:none; }
   </style>
 </head>
 <body>
 
-  <header>
+<header>
+  <img src="https://cdn.pixabay.com/photo/2016/02/19/10/00/car-1209912_960_720.jpg" alt="Автошкола">
+  <div class="overlay">
     <h1>Автошкола "СТАРТ"</h1>
-    <p>Надёжный путь к водительскому удостоверению!</p>
-  </header>
-
-  <main>
-    <h2>Запишитесь прямо сейчас</h2>
+    <p>Категории A, B, C, D, BE, CE, DE — учись с уверенностью!</p>
     <div class="buttons">
-      <a href="https://wa.me/79145539975" target="_blank">Написать в WhatsApp</a>
-      <a href="https://t.me/+79145539975" target="_blank">Связаться в Telegram</a>
+      <a href="https://wa.me/79145539975" target="_blank">WhatsApp</a>
+      <a href="https://t.me/+79145539975" class="telegram" target="_blank">Telegram</a>
     </div>
+  </div>
+</header>
 
-    <h2>Наши инструкторы:</h2>
-    <ul style="list-style:none; padding-left:0;">
-      <li>🚗 Алексей Смирнов — опыт 10 лет</li>
-      <li>🚙 Ольга Кузнецова — автоинструктор категории B</li>
-      <li>🚗 Михаил Иванов — специалист по подготовке к экзаменам</li>
-    </ul>
+<div class="section">
+  <h2>Категории обучения</h2>
+  <div class="categories">
+    <div class="category"><h3>A</h3><p>Мотоциклы</p></div>
+    <div class="category"><h3>B</h3><p>Легковые авто</p></div>
+    <div class="category"><h3>C</h3><p>Грузовики</p></div>
+    <div class="category"><h3>D</h3><p>Автобусы</p></div>
+    <div class="category"><h3>BE</h3><p>Л/авто + прицеп</p></div>
+    <div class="category"><h3>CE</h3><p>Грузовик + прицеп</p></div>
+    <div class="category"><h3>DE</h3><p>Автобус + прицеп</p></div>
+  </div>
+</div>
 
-    <h2>Наша команда</h2>
-    <p>📌 <strong>Тимур Расулов</strong> — координатор по работе с учениками и расписанием</p>
+<div class="section">
+  <h2>Наши инструкторы</h2>
+  <div class="instructors">
+    <div class="card"><h3>Алексей Буров</h3><p>14 лет стажа, учит уверенно и спокойно.</p></div>
+    <div class="card"><h3>Тамил Дашиев</h3><p>Экзаменатор, помог сотне учеников сдать с первого раза.</p></div>
+    <div class="card"><h3>Роман Зайцев</h3><p>Специалист по практике и сложным ситуациям.</p></div>
+  </div>
+</div>
 
-    <div class="reviews">
-      <h2>Отзывы наших учеников:</h2>
-      <div class="review">⭐⭐⭐⭐⭐ «Отличная автошкола, сдал с первого раза!» — Артём</div>
-      <div class="review">⭐⭐⭐⭐⭐ «Хорошие машины и добрые инструктора!» — Валерия</div>
-      <div class="review">⭐⭐⭐⭐⭐ «Рекомендую всем друзьям» — Руслан</div>
-      <div class="review">⭐⭐⭐⭐⭐ «Учиться было легко и приятно» — Анастасия</div>
-    </div>
-  </main>
+<div class="section">
+  <h2>Отзывы учеников</h2>
+  <div class="reviews">
+    <div class="review">⭐⭐⭐⭐⭐ «Сдал с первого раза, всё спокойно и чётко!» — Марина К.</div>
+    <div class="review">⭐⭐⭐⭐⭐ «Огромное спасибо Тамилу, помог поверить в себя.» — Эльдар М.</div>
+    <div class="review">⭐⭐⭐⭐⭐ «Инструкторы настоящие профи!» — Алексей П.</div>
+    <div class="review">⭐⭐⭐⭐⭐ «Благодаря Роману без нервов на дороге!» — Ирина С.</div>
+    <div class="review">⭐⭐⭐⭐⭐ «Тимур всегда на связи, всё организовано!» — Светлана Л.</div>
+    <div class="review">⭐⭐⭐⭐⭐ «Каждый день узнаёшь что-то полезное!» — Руслан Т.</div>
+  </div>
+</div>
 
-  <footer>
-    © 2025 Автошкола "СТАРТ" — Все права защищены.
-  </footer>
+<div class="section">
+  <p><strong>Тимур Расулов</strong> — координатор, сопровождает вас от первого звонка до вручения прав.</p>
+</div>
+
+<footer>
+  <p>© 2025 Автошкола "СТАРТ". Связаться: 
+    <a href="https://wa.me/79145539975">WhatsApp</a> | <a href="https://t.me/+79145539975">Telegram</a>
+  </p>
+</footer>
 
 </body>
 </html>
